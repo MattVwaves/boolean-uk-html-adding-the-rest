@@ -1,0 +1,122 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;}
+
+.navigation-bar {
+    margin-bottom: 5px;
+    display: grid;
+    grid-template-columns: 40px 160px 600px 1fr;
+    height: 50px
+    
+}
+
+.home,
+.search,
+.settings,
+.user
+{
+    border-right: solid 1px #eceff1;
+    border-bottom: solid 1px #eceff1
+}
+
+.main-menu,
+.home {
+    padding:5px
+}
+
+.container {
+    display: grid;
+    grid-template:
+
+      "folders emails q-settings r-bar" 1fr /
+        200px   2fr  200px 40px; 
+        
+    height: 1000px;
+}
+
+.folders {
+    grid-area: folders;
+}
+.compose {
+    height: 40px
+}
+.emails {
+    grid-area: emails;
+}
+.q-settings {
+    grid-area: q-settings;
+}
+.r-bar {
+    grid-area: r-bar;
+}
+
+.compose,
+.more,
+.meet,
+.q-settings,
+.see-all-settings,
+.density-setting-compact,
+.theme-pic-last
+ { 
+    border-bottom: solid 1px #eceff1
+}
+
+.select-all,
+.emails {
+    padding-left: 10px;
+    border-bottom: solid 1px #eceff1
+}
+
+.select-all,
+.q-settings,
+.see-all-settings,
+.density,
+.density-setting,
+.density-setting-compact,
+.side-icon {
+    height: 30px
+}
+
+.theme-grid {
+    display: grid;
+    grid-template:
+
+      "theme theme theme view-all" 1fr
+      "pic1 pic2 pic3 pic4" 1fr
+      "pic5 pic6 pic7 pic8" 1fr /
+        1fr 1fr 1fr 1fr;  
+    gap: 5px
+}
+
+.theme {
+    grid-area: theme
+}
+.view-all {
+    grid-area: view-all
+}
+.pic1 {
+    grid-area: pic1
+}
+.pic2 {
+    grid-area: pic2
+}
+.pic3 {
+    grid-area: pic3
+}
+.pic4 {
+    grid-area: pic4
+}
+.pic5 {
+    grid-area: pic5
+}
+.pic6 {
+    grid-area: pic6
+}
+.pic7 {
+    grid-area: pic7
+}
+.pic8 {
+    grid-area: pic8
+}
